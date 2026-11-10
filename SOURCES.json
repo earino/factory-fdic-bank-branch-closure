@@ -1,0 +1,786 @@
+{
+  "publisher-terms.snapshot": {
+    "url": "https://www.fdic.gov/data.json",
+    "bytes": 199793,
+    "sha256": "b8b4768cb003705b122b288e270a27dd01edf428abc73e4b17b8bc420e98581c",
+    "retrieved_at_unix": 1794278425.9878023,
+    "transport_attempts": 1
+  },
+  "publisher-documentation.snapshot": {
+    "url": "https://api.fdic.gov/banks/docs/",
+    "bytes": 32871,
+    "sha256": "6094a3a9a88abf00c49b363d08248a12af69b8c9df8585665bfdfd4b7908a39d",
+    "retrieved_at_unix": 1794278427.1314802,
+    "transport_attempts": 1
+  },
+  "history_721_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/history?limit=10000&offset=0&filters=CHANGECODE%3A721+AND+EFFDATE%3A%5B1900-01-01+TO+2023-06-30%5D&fields=UNINUM%2CEFFDATE%2CCHANGECODE%2CCHANGECODE_DESC%2CORG_ROLE_CDE",
+    "bytes": 1808975,
+    "sha256": "c98eed3919f407c7f98d0180396fbeb4d220f4bf681a3cfc64f48f9e18d955d7",
+    "retrieved_at_unix": 1794278430.2634497,
+    "transport_attempts": 1
+  },
+  "history_721_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/history?limit=10000&offset=10000&filters=CHANGECODE%3A721+AND+EFFDATE%3A%5B1900-01-01+TO+2023-06-30%5D&fields=UNINUM%2CEFFDATE%2CCHANGECODE%2CCHANGECODE_DESC%2CORG_ROLE_CDE",
+    "bytes": 1808982,
+    "sha256": "67ed0bc4965ab60731b0c1cb3d14b866e68b946e1098ca721e89087d683c9fde",
+    "retrieved_at_unix": 1794278434.1814997,
+    "transport_attempts": 1
+  },
+  "history_721_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/history?limit=10000&offset=20000&filters=CHANGECODE%3A721+AND+EFFDATE%3A%5B1900-01-01+TO+2023-06-30%5D&fields=UNINUM%2CEFFDATE%2CCHANGECODE%2CCHANGECODE_DESC%2CORG_ROLE_CDE",
+    "bytes": 1809007,
+    "sha256": "491ffa9dc91c977eecb6cef6ee29999cfa45039db7a35ffcb05b6ce3b769d99c",
+    "retrieved_at_unix": 1794278437.424832,
+    "transport_attempts": 1
+  },
+  "history_721_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/history?limit=10000&offset=30000&filters=CHANGECODE%3A721+AND+EFFDATE%3A%5B1900-01-01+TO+2023-06-30%5D&fields=UNINUM%2CEFFDATE%2CCHANGECODE%2CCHANGECODE_DESC%2CORG_ROLE_CDE",
+    "bytes": 1808981,
+    "sha256": "5677ed4d79abaefce354476b5cf1d5e47efce9c163ed9a653259fba5e506a247",
+    "retrieved_at_unix": 1794278441.0792074,
+    "transport_attempts": 1
+  },
+  "history_721_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/history?limit=10000&offset=40000&filters=CHANGECODE%3A721+AND+EFFDATE%3A%5B1900-01-01+TO+2023-06-30%5D&fields=UNINUM%2CEFFDATE%2CCHANGECODE%2CCHANGECODE_DESC%2CORG_ROLE_CDE",
+    "bytes": 1809007,
+    "sha256": "2136357c416c343cc871ca70bb56623e3428dab34b9946847609b170e9b926e8",
+    "retrieved_at_unix": 1794278444.664397,
+    "transport_attempts": 1
+  },
+  "history_721_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/history?limit=10000&offset=50000&filters=CHANGECODE%3A721+AND+EFFDATE%3A%5B1900-01-01+TO+2023-06-30%5D&fields=UNINUM%2CEFFDATE%2CCHANGECODE%2CCHANGECODE_DESC%2CORG_ROLE_CDE",
+    "bytes": 1808966,
+    "sha256": "b82fb443e91043d6e0f0915f4f5a471da175b847c1ffdba02cd1a9dcd80b3056",
+    "retrieved_at_unix": 1794278447.832598,
+    "transport_attempts": 1
+  },
+  "history_721_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/history?limit=10000&offset=60000&filters=CHANGECODE%3A721+AND+EFFDATE%3A%5B1900-01-01+TO+2023-06-30%5D&fields=UNINUM%2CEFFDATE%2CCHANGECODE%2CCHANGECODE_DESC%2CORG_ROLE_CDE",
+    "bytes": 770047,
+    "sha256": "dc2af6f71af0edeb564e2c947c849c1f3feb558fdde08aef3a5a3a6b243ca159",
+    "retrieved_at_unix": 1794278450.2484813,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2827694,
+    "sha256": "9fc9bc05ee2d20f13d9d4e9109942933323c61a854a2dc7b96461588bb08895c",
+    "retrieved_at_unix": 1794278453.2581887,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2834325,
+    "sha256": "64f6ec3b81d4baf09aaab3c47403f810ee89c771f18a19b62e31a90b0f13aad5",
+    "retrieved_at_unix": 1794278455.9803545,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2825391,
+    "sha256": "07fa17bb972a6ad7efea0f685e212b8c5184fd598375cddf866a38e14c08540b",
+    "retrieved_at_unix": 1794278458.997869,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2834064,
+    "sha256": "924957f854f2d9a06654151349b6cd3599629103ec27a97803d6289846393d40",
+    "retrieved_at_unix": 1794278461.5953112,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2850020,
+    "sha256": "a3adbea501f6bb47cf43eb0836d37ec860b23e50c13b8556566621dc3d87b8ea",
+    "retrieved_at_unix": 1794278464.472142,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2854706,
+    "sha256": "ba1d0645bcf97b06cf2d0fb0f5a7d36ee53ad98ae2a779ff34cde07e4c348230",
+    "retrieved_at_unix": 1794278467.992794,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2822812,
+    "sha256": "3a932193159164ca6068eeec88b22afe45cd3f89182982ed0fb7a4f05fdb285e",
+    "retrieved_at_unix": 1794278471.02355,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2852900,
+    "sha256": "da618ce4b423a18852b09b72a5f0cf4ebd4b9b4e26b0e7652d61ccf2d9dcb279",
+    "retrieved_at_unix": 1794278473.9648762,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2838277,
+    "sha256": "d31dcfa429aefb29861c30fae54c3918c4346a48757f050e7a73130231ceca31",
+    "retrieved_at_unix": 1794278476.6784143,
+    "transport_attempts": 1
+  },
+  "sod_2012_offset_90000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=90000&filters=YEAR%3A2012&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2077846,
+    "sha256": "16400acc5a280d2005e49972ce9e5f4577f523bc4e760aa2467ddade7f011ed6",
+    "retrieved_at_unix": 1794278479.1424725,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2829112,
+    "sha256": "2335d780efd624f4b27d319f132d7554479e6e3d9d7bc8df4dcad234ecc0e360",
+    "retrieved_at_unix": 1794278486.6463237,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2834139,
+    "sha256": "1b81d20497bed26fad7a89e30dbc490dedefd1a4f4461e710b6c88185bb3c2b1",
+    "retrieved_at_unix": 1794278489.3987508,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2827318,
+    "sha256": "e9e781f57dae02ca0d097515a53ccb0ff0a3823c92f4f175d76fdd0447df7ff1",
+    "retrieved_at_unix": 1794278492.130503,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2834406,
+    "sha256": "9c47cd74761f7f398900dc70df63ae9c7b0d9d2b62a26dc7ab5ad9268956f804",
+    "retrieved_at_unix": 1794278494.6376903,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2852393,
+    "sha256": "3363352be6c3aefb56c348ddafe3db04b9364de36fb692684a46b84064abb7d1",
+    "retrieved_at_unix": 1794278497.4019752,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2853600,
+    "sha256": "8ea0c3f728a27a5c884f534835e8422444c6328b4d3583e313dd6f72c4325286",
+    "retrieved_at_unix": 1794278500.2346807,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2821524,
+    "sha256": "bd18f932efb37ef89ec14212f5edcdbde9195b1b80648a79a14f2857ab4198f5",
+    "retrieved_at_unix": 1794278503.0333526,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2856324,
+    "sha256": "6d3e7a484311472aab60fc3ff571e7fcf948358f0cf4ddfd1e5db23f1d007b7c",
+    "retrieved_at_unix": 1794278505.5900655,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2837590,
+    "sha256": "af25789cf6f810a8880179fdfa32a7ef9b0362fdaa9079bdf8cb7681e277202c",
+    "retrieved_at_unix": 1794278508.3007388,
+    "transport_attempts": 1
+  },
+  "sod_2013_offset_90000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=90000&filters=YEAR%3A2013&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 1794030,
+    "sha256": "c8c1bd29f1cd2d67c55c23e7dfd8c6adf49517f44886fd9bde2b980e84f4321c",
+    "retrieved_at_unix": 1794278510.7751472,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2829973,
+    "sha256": "77863acae56a3ab01d0d4644118469e22560e634eed416aca5adde4528d2ede7",
+    "retrieved_at_unix": 1794278518.2925084,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2833849,
+    "sha256": "b99dcb68ee3f20871ee47412037dce549691b510161566158d218d0c6af47e32",
+    "retrieved_at_unix": 1794278520.904118,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2829827,
+    "sha256": "4d5b5d277d5c90acb1fb163a1429f950ce3a86eb98a3f76571938ed587e68380",
+    "retrieved_at_unix": 1794278523.4250934,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2834612,
+    "sha256": "4870460066cd51f9d9e663cbad72876ffc98c2b6fe1c9c66bfdf9423667da2cd",
+    "retrieved_at_unix": 1794278527.565103,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2854694,
+    "sha256": "9a189ba2dbd597671c369f95a5954a693f9c18eeec99514c5c8422a75c770ec6",
+    "retrieved_at_unix": 1794278530.2414377,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2848452,
+    "sha256": "481ba4905aafcf868690b55b8e2d821a5cbbe868edcedd725775e389e7ef737a",
+    "retrieved_at_unix": 1794278533.1395326,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2824618,
+    "sha256": "fed6a14cae62274168de27938446c64df6fa6c3384e179d6a49722699733fdb6",
+    "retrieved_at_unix": 1794278536.0154696,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2859965,
+    "sha256": "02af3ca6016ad86d270aad7a59dba5b3d50ec42f2a0b9bc0840a274cfbefc4cf",
+    "retrieved_at_unix": 1794278539.0673337,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2833928,
+    "sha256": "2a391ac04a51afa24b3df2b5d88eb5eb55ac200e088048016187d2f2a8f7d9d4",
+    "retrieved_at_unix": 1794278541.6841137,
+    "transport_attempts": 1
+  },
+  "sod_2014_offset_90000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=90000&filters=YEAR%3A2014&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 1336874,
+    "sha256": "541b2b59e656362374f62cd463cd210c2c6036b7befd488ee86eda847387ef84",
+    "retrieved_at_unix": 1794278544.1097696,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2831216,
+    "sha256": "8f74b3b03a86a5ed018bc8672d85f4ed70cc6f0f1fb36354055c8ee470b5f88c",
+    "retrieved_at_unix": 1794278551.3000607,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2833616,
+    "sha256": "2123b1df4f8632ef1f6f16f7b630df90572fd69a28775f4614647509e8237f93",
+    "retrieved_at_unix": 1794278553.9817529,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2829943,
+    "sha256": "ec60b1814b09f9bd890f05bcb0e90c5b02f6eebfe640a3d055c6bc26d16540ce",
+    "retrieved_at_unix": 1794278556.5128036,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2834858,
+    "sha256": "c565e2133efb35716600d785d70443450e3b4522a1a9b0c8e33caa9fa4fb9233",
+    "retrieved_at_unix": 1794278559.2420871,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2859337,
+    "sha256": "102062daba5ebb53932f26a56184f316cb9d71f58c5db97331bec5ed387e3469",
+    "retrieved_at_unix": 1794278561.8588142,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2842665,
+    "sha256": "d68ade6dbe77cd0af0187a6b24db67aa3e56b72b35762d5fde9473df08672172",
+    "retrieved_at_unix": 1794278564.490478,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2831158,
+    "sha256": "7fb68d16af4cfaf9890dbf7a46b94a0df5bd8e9900b0c25a6ce8c7948a8ff1f6",
+    "retrieved_at_unix": 1794278566.9264665,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2859342,
+    "sha256": "dd51d982c14777404739130fa26b8d7a99a9aeb95ed41214d55deee3bbd25f89",
+    "retrieved_at_unix": 1794278569.613167,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2826091,
+    "sha256": "d05a591c0a6a9bb0be944a9a9f2ff43e5989d1c6d4ece9810c5acf390afd01f4",
+    "retrieved_at_unix": 1794278572.267742,
+    "transport_attempts": 1
+  },
+  "sod_2015_offset_90000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=90000&filters=YEAR%3A2015&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 930916,
+    "sha256": "d4acd0d410ffb2ae2ba3f677180938556b6d8f3be1a35879b8094a5a51504ac9",
+    "retrieved_at_unix": 1794278574.6906962,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2771471,
+    "sha256": "b373fc0b4214992b483031e31d031030e3fecb4ecfae7820071d95b00242d0ea",
+    "retrieved_at_unix": 1794278582.0334132,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2777537,
+    "sha256": "0ca1471748de0376cf52a8567f1ee61cb871bebddc6fed9818d9c46ac80c38ce",
+    "retrieved_at_unix": 1794278584.7006335,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2767738,
+    "sha256": "4fae7d9f79fb1b07b7a9a52e99f9d43c6e90a6a1f9743e9757496784d6c4ef43",
+    "retrieved_at_unix": 1794278587.1471975,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2777245,
+    "sha256": "4fd346ba648826ae125cebe97b2cd245f7f5bdad3a7d80f60b19c83b0bb1cb3d",
+    "retrieved_at_unix": 1794278590.0537534,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2807249,
+    "sha256": "a99dcec77a2411744eedc1a4e31f43d619492fef7a8af18ffece6290ca524ede",
+    "retrieved_at_unix": 1794278592.97385,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2775113,
+    "sha256": "1506e1689e65a624461e4fb334682b024f9eda198eb0f8c712dbc6aa454fb6de",
+    "retrieved_at_unix": 1794278595.9437988,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2780727,
+    "sha256": "5eb68ec222f55c3f377f879f182925cc22c784c836e8ac68b3875a2c60c24b86",
+    "retrieved_at_unix": 1794278598.3836951,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2798286,
+    "sha256": "5261022d223935a82109b427febe1389f8f3d612870c8cb76d93714bb8fd3eef",
+    "retrieved_at_unix": 1794278601.642313,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2765989,
+    "sha256": "f01b5ebca0a79afcd9855c33d7aeb6780d904e08e02c44fbb7070a7ab8c16713",
+    "retrieved_at_unix": 1794278604.481341,
+    "transport_attempts": 1
+  },
+  "sod_2016_offset_90000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=90000&filters=YEAR%3A2016&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 514828,
+    "sha256": "a6ba2c45dc9497531c97e85c2d96607a8e46f42a929e15c7df881f425b543c08",
+    "retrieved_at_unix": 1794278607.1583068,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2710716,
+    "sha256": "dffb000967d2b0fe6936b946c9afc193f70e94fbff7c13133b87f4c228dab9a3",
+    "retrieved_at_unix": 1794278611.2352657,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2721456,
+    "sha256": "d5ec127c23b21370830e5b3bc88b3275887ff06532e0a1c4400ceaadd55b1e46",
+    "retrieved_at_unix": 1794278613.9273276,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2707971,
+    "sha256": "d55d470dea30e85aa6dac0bf5595223faf1e28a7959818bf3a6e0056cba8d93c",
+    "retrieved_at_unix": 1794278617.0235407,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2715389,
+    "sha256": "18ac7e0d3901e853e9ef5f1ecbede70add9e241df87f21ecb227cc20be5c3782",
+    "retrieved_at_unix": 1794278619.8511448,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2755779,
+    "sha256": "8fad90e753dd8f5d91e5787b0f54da68d7ecbb59416eec39f8826b07a8a48799",
+    "retrieved_at_unix": 1794278622.7057917,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2707472,
+    "sha256": "7855f7e27c33efd017f3ffe9ae2afcae50ccce5d2a6af796bb4bda6aa216550d",
+    "retrieved_at_unix": 1794278625.4627993,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2728157,
+    "sha256": "699d8c5cfb577aeb7026b7ca3d1afe9d61007853344812396d05aea65c43e5ae",
+    "retrieved_at_unix": 1794278628.2008445,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2735564,
+    "sha256": "41ae7845c6470b687a3015a81f076c73c4f20f2f547afa3806772ae3a2e1cf83",
+    "retrieved_at_unix": 1794278631.0673969,
+    "transport_attempts": 1
+  },
+  "sod_2017_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2017&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2669910,
+    "sha256": "914a8401939b61a6f54f9e662b14a4d629ebf29d26ec0df0e11d058127308d8e",
+    "retrieved_at_unix": 1794278633.8709848,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2711698,
+    "sha256": "2b319cee6cd64f961a25f5080a7e03e23e79d4ed918a689c7d216cc83e3af11b",
+    "retrieved_at_unix": 1794278638.4653027,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2721490,
+    "sha256": "31aa36b64a4771b6b905d830b3a85f24a1fe06cf2ef0ae2f8a97749dba5a6694",
+    "retrieved_at_unix": 1794278641.4507298,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2709050,
+    "sha256": "5cf7c1ed4cce04fec209ae3f1b480a946b2a9cfd94b38f0541117a1556edc817",
+    "retrieved_at_unix": 1794278644.258713,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2716355,
+    "sha256": "0e63e3e4f61a7787400654ebc1b389827f6dcb383cc8a485c9db722195bc8770",
+    "retrieved_at_unix": 1794278647.1194954,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2758664,
+    "sha256": "d9cf7ab616ef46678f51c4712e9335a45bd2480554d751d473a7c53013ea5dd7",
+    "retrieved_at_unix": 1794278650.7071242,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2707343,
+    "sha256": "280795f600a43deb3160ac13e0071645f70d91c17f2d9a7266b421284927ac64",
+    "retrieved_at_unix": 1794278653.7937293,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2730129,
+    "sha256": "9a08ed50ebce2716cc0e991c9b9309127e4867e3c6ac78e546d41e2be0e9709c",
+    "retrieved_at_unix": 1794278656.3853428,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2730887,
+    "sha256": "eb70d8a8589ce3a46e541e716289a52a6f92871bbed89fcf2cb964e5c5dd4182",
+    "retrieved_at_unix": 1794278659.1773531,
+    "transport_attempts": 1
+  },
+  "sod_2018_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2018&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2188580,
+    "sha256": "0b3fcb3291817dee99018b0d4177f1a0ed9642807b6af636f8324c0747fff205",
+    "retrieved_at_unix": 1794278661.508875,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2712445,
+    "sha256": "6789d5241d4f0f8b8bcab5fc90fb0bf20008e36c222e5d8829a0827a7597eb4b",
+    "retrieved_at_unix": 1794278665.4889753,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2721801,
+    "sha256": "9124034fceab6f31292c937eb49a0c201c10fe44aabc6f583e59c44401f91479",
+    "retrieved_at_unix": 1794278668.13518,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2710273,
+    "sha256": "bc6f513cecd785e766348964dd03014afdb7347001a72e12987e3c0d4a4f5a95",
+    "retrieved_at_unix": 1794278670.8581855,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2717395,
+    "sha256": "f30ed719b7f4e2456f0de18c1fd734312e45a92a3a1e8b1c86ae84a9f7a4bff0",
+    "retrieved_at_unix": 1794278675.1963015,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2760362,
+    "sha256": "4875417d23abff51e4e8183ec0e2bca3a591bcf385802dedcff631d40d01c02a",
+    "retrieved_at_unix": 1794278677.6438966,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2705582,
+    "sha256": "ce7685581126841c9d72d29bda7e8271b0195617ca74eb2f1b3e437f3c1e4785",
+    "retrieved_at_unix": 1794278680.4220836,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2733788,
+    "sha256": "04d418c808b771876a2047629770bc30d5512971fef738b6d5c3c82923304341",
+    "retrieved_at_unix": 1794278683.1822717,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2722788,
+    "sha256": "9bb1035f285e0aabc41ea304d5941bae393cacfce859a79f9a58ce6c95a779d9",
+    "retrieved_at_unix": 1794278685.6496518,
+    "transport_attempts": 1
+  },
+  "sod_2019_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2019&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 1735614,
+    "sha256": "6d4787a659e1ff393e717e74551b82fe9ed367905b60666bbbabe8eb64c8abac",
+    "retrieved_at_unix": 1794278688.2101448,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2713158,
+    "sha256": "0a8f6bb9ec9d088730b2e35f347ddb86e45d3cd18da093403e2ed6436b584533",
+    "retrieved_at_unix": 1794278693.013403,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2724448,
+    "sha256": "3b5eb5bc513a722f3cc9d54740082e178682840abd6657f154f52e4d96b2f923",
+    "retrieved_at_unix": 1794278696.1811714,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2712690,
+    "sha256": "252a0dec2769c546219c2fc1b3383795a7a5de2d2aa4a654234ab9f4d9307a44",
+    "retrieved_at_unix": 1794278699.260081,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2718905,
+    "sha256": "506d7d1e9150256ea7dabc2dedfa2fced27e32eb371daca3e0cb5e6bfa014b93",
+    "retrieved_at_unix": 1794278702.0859938,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2761475,
+    "sha256": "dbbb4af7f989e07578c21e704a871fe44afc9e804612ab072d0e55bdb9724270",
+    "retrieved_at_unix": 1794278705.5453007,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2704495,
+    "sha256": "f9a111f042171937c8cd44eaf47eab79cb45edff4c5d79067d80bdcec9ae3ec2",
+    "retrieved_at_unix": 1794278708.1539757,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2737960,
+    "sha256": "3bdc7ca72fe85578c88484a55a9378362fa929aacda50af579cca4fc48e86283",
+    "retrieved_at_unix": 1794278710.7116582,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2716983,
+    "sha256": "379db24388c3e107e0c7da6034bf8e9accc018ab77c450f758f4841856aa9022",
+    "retrieved_at_unix": 1794278713.2137258,
+    "transport_attempts": 1
+  },
+  "sod_2020_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2020&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 1359517,
+    "sha256": "fc7be2ce06bcc2315dd5bb397d1f60e02a802a9b8eb8dd2a98ac8bdc73cb0688",
+    "retrieved_at_unix": 1794278715.7645998,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2713616,
+    "sha256": "937b68a3b587e3a08bcba20623badd9326df40592811e43825384cb96432a71d",
+    "retrieved_at_unix": 1794278719.9018734,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2724947,
+    "sha256": "aea51717b0211ad8dd126b14dbc73f63fa5002310c2be4619cbc55258b2ce137",
+    "retrieved_at_unix": 1794278722.3771212,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2712671,
+    "sha256": "a222d49368b7a52590780d05fc7691f61c640fc1fe3b641986f9c62882a53247",
+    "retrieved_at_unix": 1794278725.0721126,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2725360,
+    "sha256": "b95e79182df834126f90a16b881d695a68e3a5e74057eeca1bf367366612b466",
+    "retrieved_at_unix": 1794278727.9282427,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2747597,
+    "sha256": "870116338da89f92d0ad890a4613318a3218c3086a878c35a05b722f8acfe6be",
+    "retrieved_at_unix": 1794278730.613383,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2710915,
+    "sha256": "f5181db2fd81524fe83b854a3dc65feb87433a4f229e67e524dd7d5dfac50eca",
+    "retrieved_at_unix": 1794278733.0730925,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2744922,
+    "sha256": "194af7acb8afaede527c1d4344667bab346e9d03d9eed5afce989d5d97a69d92",
+    "retrieved_at_unix": 1794278735.6193635,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2709843,
+    "sha256": "6c2176be7e838531dc86daef99aa0d4bc2afa1e6b295e5805b06028d234f2512",
+    "retrieved_at_unix": 1794278738.2451494,
+    "transport_attempts": 1
+  },
+  "sod_2021_offset_80000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=80000&filters=YEAR%3A2021&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 492628,
+    "sha256": "3115c04c5d434da7c17867cda4b93a1e502fc7cb4773bfee382d9cae710bc430",
+    "retrieved_at_unix": 1794278739.9831553,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_0.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=0&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2747721,
+    "sha256": "d3c10e2d1008bad5a8b987d53262b81ae2e0a1351234939a744526c757b16e5b",
+    "retrieved_at_unix": 1794278744.0095496,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_10000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=10000&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2769995,
+    "sha256": "f0f387ce26f10333d5f68e4502d160537f38f3a1381e4985b6c55b837e7c7b05",
+    "retrieved_at_unix": 1794278746.9064553,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_20000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=20000&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2737105,
+    "sha256": "3a93c36e918598d113cf0a1661d27404af752d5dffb7dfad14691fe006a82e6f",
+    "retrieved_at_unix": 1794278749.4910202,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_30000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=30000&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2739632,
+    "sha256": "3cf0d3d892038f6fda5061ea590f46b3d8dfb0967965acbe5c9a7c8ffd81c8ae",
+    "retrieved_at_unix": 1794278752.3964093,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_40000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=40000&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2742680,
+    "sha256": "b10b0c204835ed9ae5ec544c973e92c0344567639ac44dc9ebf4fbcd098978a4",
+    "retrieved_at_unix": 1794278755.2204356,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_50000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=50000&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2734536,
+    "sha256": "4b2aeb011b532b22c79b593bf874e2070a31bf2d2993f08d346e3c2df16edc3c",
+    "retrieved_at_unix": 1794278757.9456327,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_60000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=60000&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2729705,
+    "sha256": "1048d3ae6a61db429dd4cc4e5aa128ec7099b8f3a6b86ff7cbac42a4a38d1db8",
+    "retrieved_at_unix": 1794278760.4602988,
+    "transport_attempts": 1
+  },
+  "sod_2022_offset_70000.json": {
+    "url": "https://api.fdic.gov/banks/sod?limit=10000&offset=70000&filters=YEAR%3A2022&fields=YEAR%2CUNINUMBR%2CCERT%2CBKMO%2CBRNUM%2CDEPSUMBR%2CSIMS_ESTABLISHED_DATE%2CBRSERTYP%2CBKCLASS%2CASSET%2CCB%2CMETROBR%2CMICROBR%2CSTALPBR%2CBRCENM%2CUSA",
+    "bytes": 2506415,
+    "sha256": "7205a7f550b26a0bca93ca626ce1089339eec141c8e5ab7bedaaa9258554c415",
+    "retrieved_at_unix": 1794278763.12178,
+    "transport_attempts": 1
+  }
+}

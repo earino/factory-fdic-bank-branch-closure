@@ -1,0 +1,154 @@
+{
+  "construction": {
+    "access_recipe": "For each survey year, page through https://api.fdic.gov/banks/sod?filters=YEAR:{year}&limit=10000&offset={offset} and read data[].data until meta.total is reached. Retain BKMO, BRNUM, UNINUMBR, CERT, DEPSUMBR, SIMS_ESTABLISHED_DATE, BRSERTYP, BKCLASS, ASSET, CB, METROBR, MICROBR, STALPBR, CNTYNAMB, BRCENM, and CONSOLD. For labels, page through https://api.fdic.gov/banks/history?filters=CHANGECODE:721 AND EFFDATE:[{year}-07-01 TO {year+1}-06-30]&limit=10000&offset={offset}; collect UNINUM and EFFDATE. Join history UNINUM to SOD UNINUMBR and set target=1 for any matching branch-closing event in the window. Exclude main offices (BKMO=1 or BRNUM=0) and any branch with a 721 event effective on or before June 30 of the survey year. Deduplicate by (YEAR, UNINUMBR).",
+    "expected_size": "The 2024 SOD response reports 76,727 branch records; 11 survey years (2012-2022) are roughly 0.8-1.0 million rows, about 50-150 MB as CSV depending on selected fields. The 2024-07-01 to 2025-06-30 history query reports 1,626 branch-closing events.",
+    "format": "Three CSV files: train.csv, eval.csv, and holdout.csv; one row per branch-year with branch_id, survey_year, feature columns, and the binary target. Keep a separate branch_id-to-CERT map for grouped diagnostics.",
+    "source_examples": "Observed 2024 SOD row: UNINUMBR=6394, NAMEFULL='Ergo Bank', BKMO=1, BRNUM=0, DEPSUMBR=82350, BRSERTYP=11. Observed history row: CHANGECODE=721, CHANGECODE_DESC='Branch Closing', UNINUM=534153, EFFDATE='2013-06-30T00:00:00'. Observed API totals: YEAR:2024 SOD total 76,727; 721 events for 2024-07-01 to 2025-06-30 total 1,626."
+  },
+  "dataset_id": "fdic-bank-branch-closure",
+  "evidence": [
+    {
+      "claim": "The FDIC Branch Office Deposits distribution is marked with USA.gov Public Domain Label 1.0 and an unrestricted-use statement.",
+      "quote": "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license.",
+      "url": "https://www.fdic.gov/data.json"
+    },
+    {
+      "claim": "U.S. federal government works are domestically public domain under statute; the label identifies that status rather than granting a license.",
+      "quote": "Data and content created by government employees within the scope of their employment are not subject to domestic copyright protection under 17 U.S.C. \u00a7 105.",
+      "url": "https://resources.data.gov/open-licenses/"
+    },
+    {
+      "claim": "The SOD is an annual June 30 survey of branch office deposits for FDIC-insured institutions.",
+      "quote": "The Summary of Deposits (SOD) is the annual survey of branch office deposits as of June 30 for all FDIC-insured institutions, including insured U.S. branches of foreign banks.",
+      "url": "https://www.fdic.gov/bank-financial-reports/summary-deposits"
+    },
+    {
+      "claim": "Change code 721 is the branch-closure reporting code.",
+      "quote": "This code is used to report offices that are listed in the SOD Survey but should be reflected as closed.",
+      "url": "https://www.fdic.gov/bank-financial-reports/summary-deposits-reporting-instructions.pdf"
+    },
+    {
+      "claim": "The history API labels code 721 as 'Branch Closing' and reports 1,626 such events effective from 2024-07-01 through 2025-06-30.",
+      "quote": "\"CHANGECODE_DESC\":\"Branch Closing\"",
+      "url": "https://api.fdic.gov/banks/history?filters=CHANGECODE:721%20AND%20EFFDATE:%5B2024-07-01%20TO%202025-06-30%5D&limit=2"
+    },
+    {
+      "claim": "The 2024 SOD snapshot contains 76,727 branch records.",
+      "quote": "\"total\":76727",
+      "url": "https://api.fdic.gov/banks/sod?filters=YEAR:2024&limit=2"
+    },
+    {
+      "claim": "The SOD API documents branch fields including UNINUMBR, DEPSUMBR, BKMO, BRNUM, BRSERTYP, BKCLASS, ASSET, CB, METROBR, MICROBR, and STALPBR.",
+      "quote": "UNINUM (BRANCH)",
+      "url": "https://api.fdic.gov/banks/docs/sod_properties.yaml"
+    }
+  ],
+  "limitations": [
+    "SOD is an annual June 30 snapshot published with a lag; this is a retrospective task and does not prove historical real-time availability.",
+    "Change code 721 captures reported branch closures; bank failures, charter consolidations, relocations, and some merger-related exits may be coded differently or not appear as 721, so the label can undercount economic closures.",
+    "Branch-year rows are clustered within banks and local markets; use bank-grouped or clustered evaluation and do not treat rows as independent.",
+    "SOD includes multiple office and service types, and service-type definitions and reporting changed over 2012-2022.",
+    "Branch deposits may be estimated or consolidated, as indicated by BRCENM, weakening deposit-based features.",
+    "FDIC data covers FDIC-insured institutions and insured U.S. branches of foreign banks, not credit unions or noninsured lenders.",
+    "History events are current-vintage and may be revised; the target uses event effective dates rather than publication dates.",
+    "The public-domain basis is U.S. federal statutory status under 17 U.S.C. \u00a7 105, not a worldwide dedication; third-party content and trademarks are excluded, and the data must not imply FDIC endorsement.",
+    "No causal interpretation: closure is a strategic bank decision, not a random outcome."
+  ],
+  "reason": "FDIC's BankFind Summary of Deposits and history APIs expose directly downloadable branch-level records and dated Branch Closing events. The distribution is marked USA.gov Public Domain Label 1.0 with an explicit reuse statement; the 2024 SOD snapshot alone has 76,727 branch records and the 2024-07-01 to 2025-06-30 history query has 1,626 branch-closing events, enough for fixed chronological splits without accounts or multi-agency joins.",
+  "source": {
+    "attribution": "Federal Deposit Insurance Corporation (FDIC)",
+    "citation": "",
+    "documentation_url": "https://api.fdic.gov/banks/docs/",
+    "license": "U.S. Public Domain (USA.gov Public Domain Label 1.0)",
+    "publisher": "Federal Deposit Insurance Corporation (FDIC)",
+    "redistribution": true,
+    "terms_excerpt": "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license.",
+    "terms_url": "https://www.fdic.gov/data.json",
+    "urls": [
+      "https://api.fdic.gov/banks/sod",
+      "https://api.fdic.gov/banks/history",
+      "https://banks.data.fdic.gov/bankfind-suite/SOD/customDownload"
+    ]
+  },
+  "task": {
+    "decision_user": "A bank branch-network planner, bank regulator, or local access-to-banking analyst deciding which open branches to monitor or prioritize for retention.",
+    "features": [
+      {
+        "availability": "SOD snapshot at the decision date; may be missing",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Domestic deposits reported for the branch, in thousands of dollars, as of June 30.",
+        "name": "DEPSUMBR"
+      },
+      {
+        "availability": "SOD snapshot at the decision date; may be missing",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Branch establishment date; available as a calendar date at the decision date and usable to compute branch age.",
+        "name": "SIMS_ESTABLISHED_DATE"
+      },
+      {
+        "availability": "SOD snapshot at the decision date",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Branch service type code distinguishing full service offices from limited service or specialized offices.",
+        "name": "BRSERTYP"
+      },
+      {
+        "availability": "SOD snapshot at the decision date",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Institution class code such as national bank, state nonmember bank, or savings institution.",
+        "name": "BKCLASS"
+      },
+      {
+        "availability": "SOD snapshot at the decision date; may be missing",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Total assets of the parent institution, repeated on the branch record.",
+        "name": "ASSET"
+      },
+      {
+        "availability": "SOD snapshot at the decision date",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Metro area flag for the branch location.",
+        "name": "METROBR"
+      },
+      {
+        "availability": "SOD snapshot at the decision date",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Micro area flag for the branch location.",
+        "name": "MICROBR"
+      },
+      {
+        "availability": "SOD snapshot at the decision date",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Branch state abbreviation.",
+        "name": "STALPBR"
+      },
+      {
+        "availability": "SOD snapshot at the decision date; interpretation follows the reporting instructions",
+        "evidence_url": "https://www.fdic.gov/bank-financial-reports/summary-deposits-reporting-instructions.pdf",
+        "meaning": "CEN code indicating whether branch deposits are estimated, consolidated with another location, or the office is non deposit accepting.",
+        "name": "BRCENM"
+      },
+      {
+        "availability": "Derived from the same snapshot at the decision date",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Number of SOD office rows for the same institution certificate in survey year t, computed from the snapshot.",
+        "name": "branch_count_bank"
+      },
+      {
+        "availability": "Derived from the same snapshot at the decision date; missing when unavailable",
+        "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+        "meaning": "Branch DEPSUMBR divided by the sum of DEPSUMBR for the same institution certificate in year t; missing when either component is unavailable or the denominator is not positive.",
+        "name": "branch_deposit_share"
+      }
+    ],
+    "outcome_horizon": "12 months, from July 1 of year t through June 30 of year t+1.",
+    "population": "All branch offices in the annual FDIC Summary of Deposits snapshot for survey year t that have BKMO code 0, BRNUM greater than 0, positive UNINUMBR, USA flag 1, a valid state or territory branch code, and no branch role 721 Branch Closing event effective on or before June 30 of year t; one row per survey year and UNINUMBR after deduplication.",
+    "prediction_time": "June 30 of survey year t, at the SOD branch snapshot date. The public SOD file is released later; this retrospective task treats the June 30 values as decision time measurements and does not claim real time availability. The institution community bank flag is not part of the shipped feature set because the selected SOD vintages carry no nonmissing values for it.",
+    "question": "Will an existing FDIC-insured bank branch close within the next 12 months?",
+    "simple_references": "Majority class; base rates by survey year, branch service type, state, metro or micro status, and bank class; bank and county identity controls; persistence is not applicable because the population is conditioned on branches open at the decision date.",
+    "split_policy": "Fixed chronological survey years: train 2012-2018, eval 2019-2020, holdout 2021-2022. No random split. Each label window is exactly the following 12 months, so adjacent year windows do not overlap; no additional embargo is needed.",
+    "target": "1 if the branch's FDIC UNINUM appears in a BankFind history record with CHANGECODE 721 ('Branch Closing'), ORG_ROLE_CDE 'BR', and an effective date after June 30 of year t and on or before June 30 of year t+1; otherwise 0.",
+    "usefulness": "The label is a future structural event from a separate history record, not a field copied from the same snapshot. It supports planning and access to banking analysis of whether branch deposits, branch age, service type, institution size, and local market context predict closure beyond bank and state baselines."
+  },
+  "title": "Will an existing U.S. bank branch close within the next 12 months? Forward branch closure from the FDIC Summary of Deposits",
+  "verdict": "ready"
+}

@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "terms_url": "https://www.fdic.gov/data.json",
+  "terms_sha256": "b8b4768cb003705b122b288e270a27dd01edf428abc73e4b17b8bc420e98581c",
+  "documentation_url": "https://api.fdic.gov/banks/docs/",
+  "documentation_sha256": "6094a3a9a88abf00c49b363d08248a12af69b8c9df8585665bfdfd4b7908a39d",
+  "quoted_excerpt": "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license.",
+  "excerpt_found": true,
+  "excerpt_match": "contiguous",
+  "scope": "Captured publisher bytes and quote presence; semantic applicability reviewed separately"
+}

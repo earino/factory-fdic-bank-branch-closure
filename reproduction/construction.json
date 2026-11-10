@@ -1,0 +1,319 @@
+{
+  "construction_notes": "Repair driven by the qualification diagnostics, not a change to the frozen task. The build code is unchanged because the builder already produced the declared rows; the failures were descriptor and clustering issues. First, snapshot_date was shipped but not declared, so it is now explicitly listed in carry_columns while time_column remains snapshot_date. Second, branch_deposit_share was already a declared feature but was missing from high_cardinality_columns; it is now declared there alongside SIMS_ESTABLISHED_DATE. Third, timing.features previously left the lag null, which the gate rejected. The lag is now recorded as 0 with lag_basis decision_instant and an explicit citation saying this denotes measurement at the June 30 period end, not a measured zero-day public release; actual SOD publication lag remains unverified and is stated in limitations. Fourth, event_key_column was changed from snapshot_date to SIMS_ESTABLISHED_DATE because snapshot_date collapses each split to only the annual survey dates, yielding two distinct positive day clusters in eval and holdout. The actual branch closure date is a label-source value and is not shipped. The establishment date is available at the decision date and gives conservative day clusters without using the outcome. Population filters, prior-closure exclusion, the 12-month forward 721 branch-role label, identifiers, carry columns, feature list, target, and fixed chronological split windows are unchanged. The builder still records the absence of nonmissing CB values and omits CB rather than shipping an empty column. Missing history outcomes are not mapped to negatives beyond the evidenced complete query window; the history query is bounded to 2023-06-30 and the latest label window ends there. Honest gaps: the history module is a current-vintage administrative record so training label availability remains unverified; the ORG_ROLE_CDE BR convention is assumed from the frozen target and the builder fails with observed headers if absent; the CB semantic gap is retained with recorded evidence; no verified publication-lag observations exist. Field and join failures remain bounded to 4000 characters and include observed headers, missing names, and selected archive member.",
+  "quality": {
+    "carry_columns": [
+      "branch_id",
+      "cert",
+      "survey_year",
+      "snapshot_date"
+    ],
+    "evaluation_contract": {
+      "access": "isolated_rows",
+      "cross_row_audit": {
+        "auxiliary_files_review": "Only the declared train, eval, and holdout CSVs are written. Bank identifiers are carried only for grouped diagnostics; no answer scaffolds or auxiliary labeled files are produced.",
+        "probes": [],
+        "rationale": "Rows are branch-year snapshots and labels come from future 721 events, not from cross-row feature columns. Positive day clusters are counted by branch establishment date because the actual closure event date is a label-source value and is not shipped."
+      },
+      "feature_evidence": {
+        "ASSET": {
+          "availability": "SOD snapshot at the decision date; may be missing",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "BKCLASS": {
+          "availability": "SOD snapshot at the decision date",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "BRCENM": {
+          "availability": "SOD snapshot at the decision date; interpretation follows the reporting instructions",
+          "source": "https://www.fdic.gov/bank-financial-reports/summary-deposits-reporting-instructions.pdf",
+          "status": "assumed"
+        },
+        "BRSERTYP": {
+          "availability": "SOD snapshot at the decision date",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "DEPSUMBR": {
+          "availability": "SOD snapshot at the decision date; may be missing",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "METROBR": {
+          "availability": "SOD snapshot at the decision date",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "MICROBR": {
+          "availability": "SOD snapshot at the decision date",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "SIMS_ESTABLISHED_DATE": {
+          "availability": "SOD snapshot at the decision date; may be missing",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "STALPBR": {
+          "availability": "SOD snapshot at the decision date",
+          "source": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "status": "assumed"
+        },
+        "branch_count_bank": {
+          "availability": "Derived from the same snapshot at the decision date",
+          "source": "Computed from the FDIC SOD snapshot by CERT and YEAR",
+          "status": "assumed"
+        },
+        "branch_deposit_share": {
+          "availability": "Derived from the same snapshot at the decision date; missing when unavailable",
+          "source": "Computed from FDIC SOD DEPSUMBR and the CERT level DEPSUMBR sum",
+          "status": "assumed"
+        },
+        "branch_id": {
+          "availability": "Branch identifier in the annual SOD snapshot",
+          "source": "FDIC SOD UNINUMBR",
+          "status": "assumed"
+        },
+        "branch_year_id": {
+          "availability": "Constructed for every included branch year row",
+          "source": "Constructed from FDIC SOD UNINUMBR and YEAR",
+          "status": "assumed"
+        },
+        "cert": {
+          "availability": "Institution certificate repeated on branch rows",
+          "source": "FDIC SOD CERT",
+          "status": "assumed"
+        },
+        "snapshot_date": {
+          "availability": "Constant June 30 for each selected survey year",
+          "source": "FDIC SOD annual June 30 survey date",
+          "status": "assumed"
+        },
+        "survey_year": {
+          "availability": "Annual survey year",
+          "source": "FDIC SOD YEAR",
+          "status": "assumed"
+        }
+      },
+      "limitations": [
+        "SOD is an annual June 30 snapshot and the public file is released later, so this is retrospective research and not a real time forecasting claim.",
+        "The history API is a current vintage administrative record and may be revised; the target uses event effective dates rather than publication dates.",
+        "Reported 721 branch closures may undercount economic closures such as bank failures, charter consolidations, relocations, and some merger related exits.",
+        "Branch year rows are clustered within banks and local markets and should be evaluated with bank grouped or clustered methods.",
+        "SOD service type and field definitions may change over 2012 through 2022.",
+        "No verified SOD publication lag observations were available; the feature lag field is zero to denote the June 30 decision instant, not a measured zero-day public release. The actual publication lag remains unverified.",
+        "Presence of ORG_ROLE_CDE and the exact branch role code BR are assumed from the frozen target; the builder fails with the observed source headers if either is absent.",
+        "The FDIC community bank flag is not usable in the selected SOD vintages: requesting CB returns no nonmissing values for survey years 2012 through 2022, and the institutions endpoint returns only CERT and ID records, so the previously planned CB feature is omitted with recorded evidence instead of being shipped as an empty column.",
+        "Label derived group rates are not shipped and training rates are not used as features, so no causal training rate feature is exposed.",
+        "Closure event dates are label-source values and are not shipped; conservative positive day clusters use the branch establishment date, a decision-time date."
+      ],
+      "selection": {
+        "evidence": "FDIC Summary of Deposits annual June 30 survey and BankFind history change code 721.",
+        "kind": "prediction_time",
+        "rule": "Eligibility is fixed at the June 30 SOD snapshot and excludes main offices, invalid branch identifiers, non USA rows, invalid state codes, and any branch with a prior branch role 721 closure effective on or before that date. The label uses only future branch role 721 events in the following July 1 through June 30 window."
+      },
+      "training_label_timing": "unverified",
+      "use": "retrospective_research",
+      "vintage": {
+        "evidence": "The history labels come from the current FDIC BankFind history service, not a historical publication snapshot.",
+        "kind": "current_snapshot"
+      }
+    },
+    "event_key_column": "SIMS_ESTABLISHED_DATE",
+    "features": [
+      "DEPSUMBR",
+      "SIMS_ESTABLISHED_DATE",
+      "BRSERTYP",
+      "BKCLASS",
+      "ASSET",
+      "METROBR",
+      "MICROBR",
+      "STALPBR",
+      "BRCENM",
+      "branch_count_bank",
+      "branch_deposit_share"
+    ],
+    "features_documented_at": "prediction_time",
+    "high_cardinality_columns": [
+      "branch_year_id",
+      "branch_id",
+      "cert",
+      "SIMS_ESTABLISHED_DATE",
+      "branch_deposit_share"
+    ],
+    "id_columns": [
+      "branch_year_id"
+    ],
+    "label_source_columns": [
+      "UNINUM",
+      "EFFDATE",
+      "CHANGECODE",
+      "ORG_ROLE_CDE"
+    ],
+    "measurements": [
+      {
+        "column": "DEPSUMBR",
+        "frame": "SOD branch record as of June 30; domestic deposits",
+        "unit": "thousands of USD"
+      },
+      {
+        "column": "ASSET",
+        "frame": "Parent institution total assets repeated on the SOD branch record",
+        "unit": "thousands of USD"
+      },
+      {
+        "column": "SIMS_ESTABLISHED_DATE",
+        "frame": "FDIC branch establishment date",
+        "unit": "calendar date"
+      },
+      {
+        "column": "branch_count_bank",
+        "frame": "Count of SOD office rows for the same CERT and YEAR",
+        "unit": "office rows"
+      },
+      {
+        "column": "branch_deposit_share",
+        "frame": "DEPSUMBR divided by the CERT and YEAR sum of DEPSUMBR over all SOD office rows",
+        "unit": "ratio"
+      }
+    ],
+    "name": "fdic-bank-branch-closure",
+    "positive_label": 1,
+    "post_hoc_columns": [
+      "UNINUM",
+      "EFFDATE",
+      "CHANGECODE",
+      "ORG_ROLE_CDE"
+    ],
+    "split_windows": {
+      "eval": {
+        "end": "2021-01-01T00:00:00.000",
+        "start": "2019-01-01T00:00:00.000"
+      },
+      "holdout": {
+        "end": null,
+        "start": "2021-01-01T00:00:00.000"
+      },
+      "train": {
+        "end": "2019-01-01T00:00:00.000",
+        "start": "2012-01-01T00:00:00.000"
+      }
+    },
+    "target": "closure_next_12m",
+    "task": {
+      "features": [
+        {
+          "availability": "SOD snapshot at the decision date; missing values remain missing.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Domestic deposits reported for the branch, in thousands of dollars, as of June 30.",
+          "name": "DEPSUMBR"
+        },
+        {
+          "availability": "SOD snapshot at the decision date; may be missing for some offices.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Branch establishment date; available as a calendar date at the decision date and usable to compute branch age.",
+          "name": "SIMS_ESTABLISHED_DATE"
+        },
+        {
+          "availability": "SOD snapshot at the decision date.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Branch service type code distinguishing full service offices from limited service or specialized offices.",
+          "name": "BRSERTYP"
+        },
+        {
+          "availability": "SOD snapshot at the decision date.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Institution class code such as national bank, state nonmember bank, or savings institution.",
+          "name": "BKCLASS"
+        },
+        {
+          "availability": "SOD snapshot at the decision date; missing values remain missing.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Total assets of the parent institution, repeated on the branch record.",
+          "name": "ASSET"
+        },
+        {
+          "availability": "SOD snapshot at the decision date.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Metro area flag for the branch location.",
+          "name": "METROBR"
+        },
+        {
+          "availability": "SOD snapshot at the decision date.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Micro area flag for the branch location.",
+          "name": "MICROBR"
+        },
+        {
+          "availability": "SOD snapshot at the decision date; only recognized state or territory codes are retained.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Branch state abbreviation.",
+          "name": "STALPBR"
+        },
+        {
+          "availability": "SOD snapshot at the decision date; interpretation follows FDIC reporting instructions.",
+          "evidence_url": "https://www.fdic.gov/bank-financial-reports/summary-deposits-reporting-instructions.pdf",
+          "meaning": "CEN code indicating whether branch deposits are estimated, consolidated with another location, or the office is non deposit accepting.",
+          "name": "BRCENM"
+        },
+        {
+          "availability": "Derived from the SOD snapshot at the decision date.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Number of SOD office rows for the same institution certificate in survey year t, computed from the snapshot.",
+          "name": "branch_count_bank"
+        },
+        {
+          "availability": "Derived from the SOD snapshot at the decision date; missing when unavailable.",
+          "evidence_url": "https://api.fdic.gov/banks/docs/sod_properties.yaml",
+          "meaning": "Branch DEPSUMBR divided by the sum of DEPSUMBR for the same institution certificate in year t; missing when either component is unavailable or the denominator is not positive.",
+          "name": "branch_deposit_share"
+        }
+      ],
+      "population": "All branch offices in the annual FDIC Summary of Deposits snapshot for survey year t that have BKMO code 0, BRNUM greater than 0, positive UNINUMBR, USA flag 1, a valid state or territory branch code, and no branch role 721 Branch Closing event effective on or before June 30 of year t; one row per survey year and UNINUMBR after deduplication.",
+      "prediction_time": "June 30 of survey year t, at the SOD branch snapshot date. The public SOD file is released later; this retrospective task treats the June 30 values as decision time measurements and does not claim real time availability. The institution community bank flag is not part of the shipped feature set because the selected SOD vintages carry no nonmissing values for it.",
+      "question": "Will an existing FDIC insured bank branch close within the next 12 months?",
+      "simple_references": "Majority class; base rates by survey year, branch service type, state, metro or micro status, and bank class; bank and county identity controls; persistence is not applicable because the population is conditioned on branches open at the decision date.",
+      "usefulness": "The label is a future structural event from a separate history record, not a field copied from the same snapshot. It supports planning and access to banking analysis of whether branch deposits, branch age, service type, institution size, and local market context predict closure beyond bank and state baselines."
+    },
+    "time_column": "snapshot_date",
+    "timing": {
+      "features": {
+        "lag_basis": "decision_instant",
+        "period": "Y",
+        "published_days_after_period_end": 0,
+        "source_kind": "administrative_record"
+      },
+      "observations": [],
+      "prediction_instant": {
+        "citation": "The decision instant is the June 30 SOD survey period end. The public file is released later; the actual publication lag is unverified. The feature lag is recorded as zero to denote measurement at the period end, not a claim of zero-day public release.",
+        "days_after_period_end": 0,
+        "kind": "period_end",
+        "period": "Y"
+      },
+      "row_selection": {
+        "fields": [
+          "YEAR",
+          "BKMO",
+          "BRNUM",
+          "UNINUMBR",
+          "USA",
+          "STALPBR",
+          "UNINUM",
+          "EFFDATE",
+          "ORG_ROLE_CDE"
+        ],
+        "latest_period_used": "2022",
+        "rule": "Keep annual SOD branch rows with BKMO code 0, BRNUM greater than 0, positive UNINUMBR, USA flag 1, recognized branch state, and no branch role 721 event effective on or before June 30 of the survey year; label 1 only for a branch role 721 event in the following July 1 through June 30 window."
+      }
+    }
+  },
+  "references": {
+    "entity_columns": [
+      "branch_id",
+      "cert"
+    ],
+    "persistence_column": null,
+    "persistence_direction": 1
+  }
+}

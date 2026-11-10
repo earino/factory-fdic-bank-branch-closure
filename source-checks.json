@@ -1,0 +1,527 @@
+{
+  "checks": [
+    {
+      "check": "History pagination reached the API total",
+      "observed": {
+        "rows_fetched": 64256,
+        "meta_total": 64256,
+        "field_fallback": false
+      },
+      "expected": "fetched rows equal meta.total",
+      "passed": true
+    },
+    {
+      "check": "History query contains branch closing code records",
+      "observed": {
+        "returned_rows": 64256,
+        "code_721_rows": 64256,
+        "other_code_rows_excluded": 0
+      },
+      "expected": "at least one 721 record after excluding other returned codes",
+      "passed": true
+    },
+    {
+      "check": "History 721 records carry the Branch Closing description",
+      "observed": {
+        "records": 64256,
+        "unexpected_description_count": 0
+      },
+      "expected": "all selected 721 records are labelled Branch Closing",
+      "passed": true
+    },
+    {
+      "check": "History 721 events include branch role records",
+      "observed": {
+        "branch_role_events": 64256,
+        "non_branch_721": 0
+      },
+      "expected": "at least one branch role event and no missing role values",
+      "passed": true
+    },
+    {
+      "check": "History effective dates parse for every branch role event",
+      "observed": {
+        "events": 64256,
+        "min_effective": "1999-08-02",
+        "max_effective": "2023-06-30"
+      },
+      "expected": "all effective dates parse and at least one event exists",
+      "passed": true
+    },
+    {
+      "check": "Community bank flag has no nonmissing publisher values in the selected SOD vintages and is therefore documented rather than shipped as an empty declared column",
+      "observed": {
+        "requested_field": "CB",
+        "nonmissing_by_year": {
+          "2012": 0,
+          "2013": 0,
+          "2014": 0,
+          "2015": 0,
+          "2016": 0,
+          "2017": 0,
+          "2018": 0,
+          "2019": 0,
+          "2020": 0,
+          "2021": 0,
+          "2022": 0
+        },
+        "sod_headers_2022": [
+          "ASSET",
+          "BKCLASS",
+          "BKMO",
+          "BRCENM",
+          "BRNUM",
+          "BRSERTYP",
+          "CB",
+          "CERT",
+          "DEPSUMBR",
+          "ID",
+          "METROBR",
+          "MICROBR",
+          "SIMS_ESTABLISHED_DATE",
+          "STALPBR",
+          "UNINUMBR",
+          "USA",
+          "YEAR"
+        ]
+      },
+      "expected": "the SOD branch record carries no nonmissing community bank flag for survey years 2012 through 2022, so the feature is omitted with recorded evidence",
+      "passed": true
+    },
+    {
+      "check": "SOD required field names are present for every survey year",
+      "observed": {
+        "2012": [],
+        "2013": [],
+        "2014": [],
+        "2015": [],
+        "2016": [],
+        "2017": [],
+        "2018": [],
+        "2019": [],
+        "2020": [],
+        "2021": [],
+        "2022": []
+      },
+      "expected": "every declared SOD feature field name appears in the returned record headers for all selected years",
+      "passed": true
+    },
+    {
+      "check": "SOD annual row counts reached API meta totals",
+      "observed": {
+        "meta_total": {
+          "2012": 97341,
+          "2013": 96340,
+          "2014": 94725,
+          "2015": 93272,
+          "2016": 91834,
+          "2017": 89849,
+          "2018": 88075,
+          "2019": 86392,
+          "2020": 84982,
+          "2021": 81791,
+          "2022": 79172
+        },
+        "rows_fetched": {
+          "2012": 97341,
+          "2013": 96340,
+          "2014": 94725,
+          "2015": 93272,
+          "2016": 91834,
+          "2017": 89849,
+          "2018": 88075,
+          "2019": 86392,
+          "2020": 84982,
+          "2021": 81791,
+          "2022": 79172
+        },
+        "field_fallback_by_year": {
+          "2012": false,
+          "2013": false,
+          "2014": false,
+          "2015": false,
+          "2016": false,
+          "2017": false,
+          "2018": false,
+          "2019": false,
+          "2020": false,
+          "2021": false,
+          "2022": false
+        }
+      },
+      "expected": "fetched rows equal meta.total and totals are positive",
+      "passed": true
+    },
+    {
+      "check": "Every declared feature has at least one nonmissing value",
+      "observed": {
+        "DEPSUMBR": 916181,
+        "SIMS_ESTABLISHED_DATE": 916176,
+        "BRSERTYP": 916181,
+        "BKCLASS": 916181,
+        "ASSET": 916181,
+        "METROBR": 830470,
+        "MICROBR": 830470,
+        "STALPBR": 916181,
+        "BRCENM": 59570,
+        "branch_count_bank": 916181,
+        "branch_deposit_share": 916178
+      },
+      "expected": "each shipped feature has positive nonmissing coverage after parsing",
+      "passed": true
+    },
+    {
+      "check": "History to SOD branch join matches branch identifiers",
+      "observed": {
+        "distinct_sod_branches": 103578,
+        "distinct_history_branches": 64242,
+        "matched": 31295
+      },
+      "expected": "at least one branch identifier matches an SOD branch",
+      "passed": true
+    },
+    {
+      "check": "Population filters were applied and rows were retained",
+      "observed": {
+        "2012": {
+          "raw_rows": 97341,
+          "main_office_rows": 7255,
+          "bad_brnum_rows": 7255,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 514,
+          "invalid_state_rows": 0,
+          "after_population_filters": 89585,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 114,
+          "future_721_positive_rows": 2362,
+          "final_rows": 89471
+        },
+        "2013": {
+          "raw_rows": 96340,
+          "main_office_rows": 6950,
+          "bad_brnum_rows": 6950,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 496,
+          "invalid_state_rows": 0,
+          "after_population_filters": 88906,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 112,
+          "future_721_positive_rows": 2769,
+          "final_rows": 88794
+        },
+        "2014": {
+          "raw_rows": 94725,
+          "main_office_rows": 6669,
+          "bad_brnum_rows": 6669,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 462,
+          "invalid_state_rows": 0,
+          "after_population_filters": 87606,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 110,
+          "future_721_positive_rows": 2429,
+          "final_rows": 87496
+        },
+        "2015": {
+          "raw_rows": 93272,
+          "main_office_rows": 6358,
+          "bad_brnum_rows": 6358,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 447,
+          "invalid_state_rows": 0,
+          "after_population_filters": 86478,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 87,
+          "future_721_positive_rows": 2397,
+          "final_rows": 86391
+        },
+        "2016": {
+          "raw_rows": 91834,
+          "main_office_rows": 6068,
+          "bad_brnum_rows": 6068,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 0,
+          "invalid_state_rows": 0,
+          "after_population_filters": 85766,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 55,
+          "future_721_positive_rows": 2913,
+          "final_rows": 85711
+        },
+        "2017": {
+          "raw_rows": 89849,
+          "main_office_rows": 5797,
+          "bad_brnum_rows": 5797,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 0,
+          "invalid_state_rows": 0,
+          "after_population_filters": 84052,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 67,
+          "future_721_positive_rows": 2749,
+          "final_rows": 83985
+        },
+        "2018": {
+          "raw_rows": 88075,
+          "main_office_rows": 5551,
+          "bad_brnum_rows": 5551,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 0,
+          "invalid_state_rows": 0,
+          "after_population_filters": 82524,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 77,
+          "future_721_positive_rows": 2777,
+          "final_rows": 82447
+        },
+        "2019": {
+          "raw_rows": 86392,
+          "main_office_rows": 5313,
+          "bad_brnum_rows": 5313,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 0,
+          "invalid_state_rows": 0,
+          "after_population_filters": 81079,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 75,
+          "future_721_positive_rows": 2515,
+          "final_rows": 81004
+        },
+        "2020": {
+          "raw_rows": 84982,
+          "main_office_rows": 5076,
+          "bad_brnum_rows": 5076,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 0,
+          "invalid_state_rows": 0,
+          "after_population_filters": 79906,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 76,
+          "future_721_positive_rows": 4377,
+          "final_rows": 79830
+        },
+        "2021": {
+          "raw_rows": 81791,
+          "main_office_rows": 4960,
+          "bad_brnum_rows": 4960,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 0,
+          "invalid_state_rows": 0,
+          "after_population_filters": 76831,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 78,
+          "future_721_positive_rows": 3618,
+          "final_rows": 76753
+        },
+        "2022": {
+          "raw_rows": 79172,
+          "main_office_rows": 4781,
+          "bad_brnum_rows": 4781,
+          "bad_uninum_rows": 0,
+          "not_usa_rows": 0,
+          "invalid_state_rows": 0,
+          "after_population_filters": 74391,
+          "duplicate_uninumbr_removed": 0,
+          "prior_721_excluded": 92,
+          "future_721_positive_rows": 2364,
+          "final_rows": 74299
+        }
+      },
+      "expected": "main offices, invalid identifiers, non USA rows, invalid states, and prior closures are counted and excluded without aborting only because they exist in the source",
+      "passed": true
+    },
+    {
+      "check": "Constructed population contains no branch with a prior 721 closure",
+      "observed": {
+        "violations": 0,
+        "prior_excluded": {
+          "2012": 114,
+          "2013": 112,
+          "2014": 110,
+          "2015": 87,
+          "2016": 55,
+          "2017": 67,
+          "2018": 77,
+          "2019": 75,
+          "2020": 76,
+          "2021": 78,
+          "2022": 92
+        }
+      },
+      "expected": "zero retained rows with a 721 event effective on or before the survey date",
+      "passed": true
+    },
+    {
+      "check": "Branch state filter retains only recognized state or territory codes",
+      "observed": {
+        "invalid_rows_in_output": 0,
+        "excluded_invalid_source_rows": 0
+      },
+      "expected": "zero invalid state codes in output while invalid source rows are counted and excluded",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "Branch year identifiers are unique",
+      "observed": {
+        "duplicate_count": 0,
+        "rows": 916181
+      },
+      "expected": "zero duplicate branch year identifiers",
+      "passed": true
+    },
+    {
+      "check": "Required identifiers and the event date are complete",
+      "observed": {
+        "branch_year_id": 0,
+        "snapshot_date": 0,
+        "branch_id": 0,
+        "survey_year": 0
+      },
+      "expected": "zero missing values for the identifier, time, branch identifier, and survey year columns",
+      "passed": true
+    },
+    {
+      "check": "Target is binary and complete",
+      "observed": {
+        "values": [
+          0,
+          1
+        ],
+        "missing": 0,
+        "positives": 31270
+      },
+      "expected": "values are a subset of 0 and 1 with no missing labels",
+      "passed": true
+    },
+    {
+      "check": "Snapshot dates are annual June 30 survey dates",
+      "observed": {
+        "unique_dates": [
+          "2012-06-30",
+          "2013-06-30",
+          "2014-06-30",
+          "2015-06-30",
+          "2016-06-30",
+          "2017-06-30",
+          "2018-06-30",
+          "2019-06-30",
+          "2020-06-30",
+          "2021-06-30",
+          "2022-06-30"
+        ],
+        "bad_date_count": 0
+      },
+      "expected": "every snapshot date is June 30 of its survey year",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "Half open chronological split windows contain every row",
+      "observed": {
+        "train": 604295,
+        "eval": 160834,
+        "holdout": 151052
+      },
+      "expected": "all rows fall in fixed train 2012 through 2018, eval 2019 through 2020, and holdout 2021 through 2022 windows",
+      "passed": true
+    },
+    {
+      "check": "History coverage reaches the end of every label window",
+      "observed": {
+        "max_snapshot_date": "2022-06-30",
+        "history_query_end": "2023-06-30"
+      },
+      "expected": "latest label window ends on or before the history query end",
+      "passed": true
+    },
+    {
+      "check": "Each chronological split contains positive closure events",
+      "observed": {
+        "train": 18396,
+        "eval": 6892,
+        "holdout": 5982
+      },
+      "expected": "positive event counts greater than zero in train, eval, and holdout",
+      "passed": true
+    },
+    {
+      "check": "Branch deposit unit and frame check",
+      "observed": {
+        "negative": 0,
+        "missing": 0,
+        "min": 0.0,
+        "max": 620718272.0
+      },
+      "expected": "nonnegative thousands of USD or missing",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "Institution asset unit and frame check",
+      "observed": {
+        "negative": 0,
+        "missing": 0,
+        "max": 3380824000.0
+      },
+      "expected": "nonnegative thousands of USD or missing",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "Branch deposit share is bounded",
+      "observed": {
+        "outside_unit_interval": 0,
+        "missing": 3
+      },
+      "expected": "nonmissing shares fall within zero and one inclusive",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "Bank branch count is at least one",
+      "observed": {
+        "below_one": 0,
+        "missing": 0
+      },
+      "expected": "nonmissing branch counts are at least one",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "Missing deposits stay missing rather than becoming zero",
+      "observed": {
+        "rows_with_missing_deposit_but_nonmissing_share": 0,
+        "missing_deposit_rows": 0
+      },
+      "expected": "rows with missing branch deposits also have a missing deposit share",
+      "passed": true
+    },
+    {
+      "check": "Written CSV header matches the declared schema",
+      "observed": {
+        "header": [
+          "branch_year_id",
+          "snapshot_date",
+          "branch_id",
+          "cert",
+          "survey_year",
+          "DEPSUMBR",
+          "SIMS_ESTABLISHED_DATE",
+          "BRSERTYP",
+          "BKCLASS",
+          "ASSET",
+          "METROBR",
+          "MICROBR",
+          "STALPBR",
+          "BRCENM",
+          "branch_count_bank",
+          "branch_deposit_share",
+          "closure_next_12m"
+        ]
+      },
+      "expected": "exact declared ID, time, carry, feature, and target names",
+      "passed": true
+    }
+  ]
+}
