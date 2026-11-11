@@ -1,0 +1,317 @@
+{
+  "artifact_version": "54e606752767b5f2a8320cfbfffb1688728120d10691db3c87524e0c407a33b4",
+  "assets": {
+    "LICENSE-EVIDENCE.json": {
+      "bytes": 640,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/LICENSE-EVIDENCE.json",
+      "hf_path": "LICENSE-EVIDENCE.json",
+      "sha256": "917e01419db6d33e900507d24719d90c8d60838ab47d111047a47f4a7bd5e865"
+    },
+    "LICENSE.md": {
+      "bytes": 859,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/LICENSE.md",
+      "hf_path": "LICENSE.md",
+      "sha256": "e6fd9f60121d8a5b64c6bf01dde21de22ba00421f56f36929bf3c771e16eac9f"
+    },
+    "README.md": {
+      "bytes": 5466,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/README.md",
+      "hf_path": "README.md",
+      "sha256": "0be144c8287c44d3131d397dfc188cee03e22b55bf7f2450f5b09219b56d26ec"
+    },
+    "SOURCES.json": {
+      "bytes": 51327,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/SOURCES.json",
+      "hf_path": "SOURCES.json",
+      "sha256": "28b5b9a1e61c4cc960959e513a8cbf33742c762e52c1ccdc612f4168595515f1"
+    },
+    "evaluation.json": {
+      "bytes": 1862,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/evaluation.json",
+      "hf_path": "evaluation.json",
+      "sha256": "4dbd53fa390cbcf470976ef2b999d94157c055d9f16c01d2c64c6e290380a09c"
+    },
+    "extract__meta.json": {
+      "bytes": 1341,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/extract__meta.json",
+      "hf_path": "extract/meta.json",
+      "sha256": "a64255d565ad177ab51f0758cb01e4eb6d93530c8677c613f602597d212d9f03"
+    },
+    "extract__private__holdout.csv": {
+      "bytes": 16070578,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/extract__private__holdout.csv",
+      "hf_path": "extract/private/holdout.csv",
+      "sha256": "5c26777c7ab0c665bdfa7e398e380e5558ffb702b04b3ba874b33941bf201cbc"
+    },
+    "extract__public__eval.csv": {
+      "bytes": 17096141,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/extract__public__eval.csv",
+      "hf_path": "extract/public/eval.csv",
+      "sha256": "d41045f04dbff2d3e0fa931f1ba7d880d845c39c4e60d0d57fb83aa0d7328e0f"
+    },
+    "extract__public__train.csv": {
+      "bytes": 63866331,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/extract__public__train.csv",
+      "hf_path": "extract/public/train.csv",
+      "sha256": "ac922de346fd2ff99d35f9867dcefd0e2a79e952afba0bb415fe9e8f71696e3c"
+    },
+    "extract__quality.json": {
+      "bytes": 16671,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/extract__quality.json",
+      "hf_path": "extract/quality.json",
+      "sha256": "089ff50bd5847c893c9e25691ef7ee6c95dcfc0e851ec07b15a21e4bf57b7f58"
+    },
+    "get_dataset.py": {
+      "bytes": 3680,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/get_dataset.py",
+      "hf_path": "get_dataset.py",
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48"
+    },
+    "qualification.json": {
+      "bytes": 17045,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/qualification.json",
+      "hf_path": "qualification.json",
+      "sha256": "4e4d1fce2d837d8a3a672e6930dfef8e51899ac5eeca22fb6052eb27faafa827"
+    },
+    "reproduction__LICENSE-CC0-1.0.txt": {
+      "bytes": 7048,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__LICENSE-CC0-1.0.txt",
+      "hf_path": "reproduction/LICENSE-CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "reproduction__LICENSE-MIT.txt": {
+      "bytes": 1124,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__LICENSE-MIT.txt",
+      "hf_path": "reproduction/LICENSE-MIT.txt",
+      "sha256": "56b932ff064e5da113ae10175c8546325f64f26e1ece71683ffcbf8b2304fe1c"
+    },
+    "reproduction__artifact_scrub.py": {
+      "bytes": 11369,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__artifact_scrub.py",
+      "hf_path": "reproduction/artifact_scrub.py",
+      "sha256": "8c663253e691a7b8751f9c853b40a3752a833360caafb1ea8e8f534e64af4b68"
+    },
+    "reproduction__build.py": {
+      "bytes": 29853,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__build.py",
+      "hf_path": "reproduction/build.py",
+      "sha256": "0f2b8b96c790613e5db46f4713ea06aca9b848aebdbafa01d96dca2053d8d416"
+    },
+    "reproduction__construction.json": {
+      "bytes": 17714,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__construction.json",
+      "hf_path": "reproduction/construction.json",
+      "sha256": "120b2a148da54f7713fddc52ab9b6cb7a08eb4ca65ef217c6781f8a7768eee1c"
+    },
+    "reproduction__dataset_package.py": {
+      "bytes": 7927,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__dataset_package.py",
+      "hf_path": "reproduction/dataset_package.py",
+      "sha256": "c2364defe58dcc99322be59a1bb04894ce00e823ce37afeb37bc31012f744327"
+    },
+    "reproduction__dataset_run.py": {
+      "bytes": 12381,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__dataset_run.py",
+      "hf_path": "reproduction/dataset_run.py",
+      "sha256": "8085fae14d6e93b852e692e18c1ef72113a3601f48f78901b6d1ae6db278de57"
+    },
+    "reproduction__get_dataset.py": {
+      "bytes": 3680,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__get_dataset.py",
+      "hf_path": "reproduction/get_dataset.py",
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48"
+    },
+    "reproduction__leakage_battery.py": {
+      "bytes": 17379,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__leakage_battery.py",
+      "hf_path": "reproduction/leakage_battery.py",
+      "sha256": "adbf7ee0aca0012b78cc1f1e4aeb968a23717cae30f66a02e080215e75f830e3"
+    },
+    "reproduction__provenance.json": {
+      "bytes": 573,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__provenance.json",
+      "hf_path": "reproduction/provenance.json",
+      "sha256": "768bebe8c4b2a024625465fb8453c587e61691707251168963ed7f1851a9b476"
+    },
+    "reproduction__qualify_dataset.py": {
+      "bytes": 66067,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__qualify_dataset.py",
+      "hf_path": "reproduction/qualify_dataset.py",
+      "sha256": "bff6d43d0904182e2612c32bab702e41addbf389904a236c209e78be39e37a6b"
+    },
+    "reproduction__recovery_recipes.py": {
+      "bytes": 17609,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__recovery_recipes.py",
+      "hf_path": "reproduction/recovery_recipes.py",
+      "sha256": "f64c542fcda232169c95ace17421b45275194b934938c0ea4c9b68e6f844ad0e"
+    },
+    "reproduction__requirements.txt": {
+      "bytes": 160,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__requirements.txt",
+      "hf_path": "reproduction/requirements.txt",
+      "sha256": "5c72f3268174d20364624f76680e189c408a05dba2e7b8cfe12d077b3865e7f0"
+    },
+    "reproduction__source.json": {
+      "bytes": 12488,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__source.json",
+      "hf_path": "reproduction/source.json",
+      "sha256": "ff4bdcbab14ed9729d0954963080b2259987eb2abbe3412db4c024b8fc28911d"
+    },
+    "reproduction__source_io.py": {
+      "bytes": 5607,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__source_io.py",
+      "hf_path": "reproduction/source_io.py",
+      "sha256": "0c60eed4968cd342148efbaac7e4fa98f00708d8e6c14c0929928687b9af1ea3"
+    },
+    "reproduction__train.py": {
+      "bytes": 2500,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__train.py",
+      "hf_path": "reproduction/train.py",
+      "sha256": "a3c6bcf13735bc85c52129ded68f839090dffdc266ebc3810dc61b2e6ea5e7e8"
+    },
+    "reproduction__validate.py": {
+      "bytes": 1277,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__validate.py",
+      "hf_path": "reproduction/validate.py",
+      "sha256": "b597e7f84fed614e64b4a86fbecbd6ec0145916a24d0d221a796586976418e7b"
+    },
+    "reproduction__validate.sh": {
+      "bytes": 482,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/reproduction__validate.sh",
+      "hf_path": "reproduction/validate.sh",
+      "sha256": "3f06ca48f11c2e05d331b4d8394284925de660c1d4b086d2f8243959e83b7e6d"
+    },
+    "source-checks.json": {
+      "bytes": 15371,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/source-checks.json",
+      "hf_path": "source-checks.json",
+      "sha256": "d462be24e4f00c32a3d92cc9a3dd93763271f4cb3fa661855b9351225230ec6d"
+    },
+    "source-snapshot.tar.gz": {
+      "bytes": 21682800,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/source-snapshot.tar.gz",
+      "hf_path": "source-snapshot.tar.gz",
+      "sha256": "cbb0fe6dda5c48cd7e259b6ec0f2f422984524be747b79ae51719035638c03d3"
+    },
+    "verify_dataset.py": {
+      "bytes": 1276,
+      "download": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/download/v-94c52a9299cf0424/verify_dataset.py",
+      "hf_path": "verify_dataset.py",
+      "sha256": "f4a4bb7f565cdbd075c520621f881876b491eaed91a5e6e70afb31e4753f9834"
+    }
+  },
+  "baseline": {
+    "metrics": {
+      "Validation calendar_identity auc": 0.5179224126161044,
+      "Validation calendar_identity brier": 0.042655080660513385,
+      "Validation full_model auc": 0.7291396394680473,
+      "Validation full_model brier": 0.04005977457598382,
+      "Validation majority_prior auc": 0.5,
+      "Validation majority_prior brier": 0.041169370095473085
+    },
+    "scope": "Existing unmodified runner baseline on public validation only; no holdout scoring"
+  },
+  "configs": [],
+  "dataset": "fdic-bank-branch-closure",
+  "documents": [
+    [
+      "README.md",
+      "Loading and reproduction"
+    ],
+    [
+      "evaluation.json",
+      "Measured baseline"
+    ],
+    [
+      "LICENSE.md",
+      "Licence and attribution"
+    ]
+  ],
+  "domain": "Federal Deposit Insurance Corporation (FDIC)",
+  "evaluation_use": "retrospective_research",
+  "github_repository": "earino/factory-fdic-bank-branch-closure",
+  "hf_repository": "earino/factory-fdic-bank-branch-closure",
+  "licenses": {
+    "attribution": "Federal Deposit Insurance Corporation (FDIC)",
+    "citation": "",
+    "code": "MIT",
+    "compilation_scope": "Our additional compilation rights only; upstream terms remain in force.",
+    "data_compilation": "CC0-1.0",
+    "source_data": "U.S. Public Domain (USA.gov Public Domain Label 1.0)"
+  },
+  "limitations": [
+    "SOD is an annual June 30 snapshot published with a lag; this is a retrospective task and does not prove historical real-time availability.",
+    "Change code 721 captures reported branch closures; bank failures, charter consolidations, relocations, and some merger-related exits may be coded differently or not appear as 721, so the label can undercount economic closures.",
+    "Branch-year rows are clustered within banks and local markets; use bank-grouped or clustered evaluation and do not treat rows as independent.",
+    "SOD includes multiple office and service types, and service-type definitions and reporting changed over 2012-2022.",
+    "Branch deposits may be estimated or consolidated, as indicated by BRCENM, weakening deposit-based features.",
+    "FDIC data covers FDIC-insured institutions and insured U.S. branches of foreign banks, not credit unions or noninsured lenders.",
+    "History events are current-vintage and may be revised; the target uses event effective dates rather than publication dates.",
+    "The public-domain basis is U.S. federal statutory status under 17 U.S.C. § 105, not a worldwide dedication; third-party content and trademarks are excluded, and the data must not imply FDIC endorsement.",
+    "No causal interpretation: closure is a strategic bank decision, not a random outcome.",
+    "SOD is an annual June 30 snapshot and the public file is released later, so this is retrospective research and not a real time forecasting claim.",
+    "The history API is a current vintage administrative record and may be revised; the target uses event effective dates rather than publication dates.",
+    "Reported 721 branch closures may undercount economic closures such as bank failures, charter consolidations, relocations, and some merger related exits.",
+    "Branch year rows are clustered within banks and local markets and should be evaluated with bank grouped or clustered methods.",
+    "SOD service type and field definitions may change over 2012 through 2022.",
+    "No verified SOD publication lag observations were available; the feature lag field is zero to denote the June 30 decision instant, not a measured zero-day public release. The actual publication lag remains unverified.",
+    "Presence of ORG_ROLE_CDE and the exact branch role code BR are assumed from the frozen target; the builder fails with the observed source headers if either is absent.",
+    "The FDIC community bank flag is not usable in the selected SOD vintages: requesting CB returns no nonmissing values for survey years 2012 through 2022, and the institutions endpoint returns only CERT and ID records, so the previously planned CB feature is omitted with recorded evidence instead of being shipped as an empty column.",
+    "Label derived group rates are not shipped and training rates are not used as features, so no causal training rate feature is exposed.",
+    "Closure event dates are label-source values and are not shipped; conservative positive day clusters use the branch establishment date, a decision-time date.",
+    "No uncertainty interval; observed differences do not establish universal headroom"
+  ],
+  "post": {
+    "paragraphs": [
+      "Will an existing FDIC-insured bank branch close within the next 12 months?",
+      "Population: All branch offices in the annual FDIC Summary of Deposits snapshot for survey year t that have BKMO code 0, BRNUM greater than 0, positive UNINUMBR, USA flag 1, a valid state or territory branch code, and no branch role 721 Branch Closing event effective on or before June 30 of year t; one row per survey year and UNINUMBR after deduplication.",
+      "Target: 1 if the branch's FDIC UNINUM appears in a BankFind history record with CHANGECODE 721 ('Branch Closing'), ORG_ROLE_CDE 'BR', and an effective date after June 30 of year t and on or before June 30 of year t+1; otherwise 0.",
+      "Prediction time: June 30 of survey year t, at the SOD branch snapshot date. The public SOD file is released later; this retrospective task treats the June 30 values as decision time measurements and does not claim real time availability. The institution community bank flag is not part of the shipped feature set because the selected SOD vintages carry no nonmissing values for it.",
+      "Splits: Fixed chronological survey years: train 2012-2018, eval 2019-2020, holdout 2021-2022. No random split. Each label window is exactly the following 12 months, so adjacent year windows do not overlap; no additional embargo is needed.",
+      "Outcome horizon: 12 months, from July 1 of year t through June 30 of year t+1.",
+      "Inputs: DEPSUMBR: Domestic deposits reported for the branch, in thousands of dollars, as of June 30.; SIMS_ESTABLISHED_DATE: Branch establishment date; available as a calendar date at the decision date and usable to compute branch age.; BRSERTYP: Branch service type code distinguishing full service offices from limited service or specialized offices.; BKCLASS: Institution class code such as national bank, state nonmember bank, or savings institution.; ASSET: Total assets of the parent institution, repeated on the branch record.; METROBR: Metro area flag for the branch location.; MICROBR: Micro area flag for the branch location.; STALPBR: Branch state abbreviation.; BRCENM: CEN code indicating whether branch deposits are estimated, consolidated with another location, or the office is non deposit accepting.; branch_count_bank: Number of SOD office rows for the same institution certificate in survey year t, computed from the snapshot.; branch_deposit_share: Branch DEPSUMBR divided by the sum of DEPSUMBR for the same institution certificate in year t; missing when either component is unavailable or the denominator is not positive."
+    ],
+    "title": "FDIC Bank Branch Closure"
+  },
+  "publication_commits": {
+    "github": "e54aefed868e5a25e89cbe4adb77cc9007524925",
+    "huggingface": "d11e0f64b2fa6ca1a9bc5b84c911cde7bf7f9113"
+  },
+  "qualification": {
+    "gate_version": "1.6.1",
+    "result": "PASSED"
+  },
+  "record_sha256": "adfe60957bd0c0d59a9e268e55d4cdde8bd8b13d19c906e1a9d12e1ebbb52eb3",
+  "release_date": "2026-11-10",
+  "release_schema": "factory-1",
+  "release_tag": "v-94c52a9299cf0424",
+  "schema_version": 1,
+  "site_revision": 2,
+  "source": {
+    "name": "Federal Deposit Insurance Corporation (FDIC)",
+    "url": "https://api.fdic.gov/banks/docs/"
+  },
+  "splits": {
+    "eval": {
+      "rows": 160834
+    },
+    "holdout": {
+      "rows": 151052
+    },
+    "train": {
+      "rows": 604295
+    }
+  },
+  "summary": "Will an existing FDIC-insured bank branch close within the next 12 months?",
+  "task_type": "binary-classification",
+  "title": "FDIC Bank Branch Closure",
+  "urls": {
+    "catalog": "https://earino.github.io/dataset-factory-site/",
+    "github": "https://github.com/earino/factory-fdic-bank-branch-closure",
+    "github_release": "https://github.com/earino/factory-fdic-bank-branch-closure/releases/tag/v-94c52a9299cf0424",
+    "huggingface": "https://huggingface.co/datasets/earino/factory-fdic-bank-branch-closure",
+    "huggingface_version": "https://huggingface.co/datasets/earino/factory-fdic-bank-branch-closure/tree/v-94c52a9299cf0424",
+    "version": "https://earino.github.io/factory-fdic-bank-branch-closure/versions/v-94c52a9299cf0424/",
+    "website": "https://earino.github.io/factory-fdic-bank-branch-closure/"
+  }
+}

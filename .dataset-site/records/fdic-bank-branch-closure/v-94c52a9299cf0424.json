@@ -271,7 +271,7 @@
       "Outcome horizon: 12 months, from July 1 of year t through June 30 of year t+1.",
       "Inputs: DEPSUMBR: Domestic deposits reported for the branch, in thousands of dollars, as of June 30.; SIMS_ESTABLISHED_DATE: Branch establishment date; available as a calendar date at the decision date and usable to compute branch age.; BRSERTYP: Branch service type code distinguishing full service offices from limited service or specialized offices.; BKCLASS: Institution class code such as national bank, state nonmember bank, or savings institution.; ASSET: Total assets of the parent institution, repeated on the branch record.; METROBR: Metro area flag for the branch location.; MICROBR: Micro area flag for the branch location.; STALPBR: Branch state abbreviation.; BRCENM: CEN code indicating whether branch deposits are estimated, consolidated with another location, or the office is non deposit accepting.; branch_count_bank: Number of SOD office rows for the same institution certificate in survey year t, computed from the snapshot.; branch_deposit_share: Branch DEPSUMBR divided by the sum of DEPSUMBR for the same institution certificate in year t; missing when either component is unavailable or the denominator is not positive."
     ],
-    "title": "Will an existing U.S. bank branch close within the next 12 months? Forward branch closure from the FDIC Summary of Deposits"
+    "title": "FDIC Bank Branch Closure"
   },
   "publication_commits": {
     "github": "e54aefed868e5a25e89cbe4adb77cc9007524925",
@@ -281,12 +281,12 @@
     "gate_version": "1.6.1",
     "result": "PASSED"
   },
-  "record_sha256": "f2a37da936aaed86b5269b63f5b8453322d1a29d007f9e205b18477aea5712b2",
+  "record_sha256": "adfe60957bd0c0d59a9e268e55d4cdde8bd8b13d19c906e1a9d12e1ebbb52eb3",
   "release_date": "2026-11-10",
   "release_schema": "factory-1",
   "release_tag": "v-94c52a9299cf0424",
   "schema_version": 1,
-  "site_revision": 1,
+  "site_revision": 2,
   "source": {
     "name": "Federal Deposit Insurance Corporation (FDIC)",
     "url": "https://api.fdic.gov/banks/docs/"
@@ -304,7 +304,7 @@
   },
   "summary": "Will an existing FDIC-insured bank branch close within the next 12 months?",
   "task_type": "binary-classification",
-  "title": "Will an existing U.S. bank branch close within the next 12 months? Forward branch closure from the FDIC Summary of Deposits",
+  "title": "FDIC Bank Branch Closure",
   "urls": {
     "catalog": "https://earino.github.io/dataset-factory-site/",
     "github": "https://github.com/earino/factory-fdic-bank-branch-closure",
